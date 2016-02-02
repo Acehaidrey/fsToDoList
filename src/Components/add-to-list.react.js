@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import Actions from '../Actions';
+import toDoStore from '../Stores/todo-store';
 
 
 export default class AddToList extends Component {
@@ -22,9 +23,10 @@ export default class AddToList extends Component {
   _handleClick = () => {
     console.log(this.state.text + " tst");
     Actions.addToDo(this.state.text);
-    // this.setState ({
-    //   text: ''
-    // });
+    // toDoStore.addToDo(this.state.text);
+    this.setState ({
+      text: ''
+    });
   };
 
   render() {

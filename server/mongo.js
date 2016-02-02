@@ -1,7 +1,7 @@
 
 var Mongoose = require('mongoose');
 Mongoose.connect('mongodb://localhost:27017/tododb'); //default port for mongodb
-const todoSchema = new Mongoose.Schema({ //mongo creates unique identifer
+var todoSchema = new Mongoose.Schema({ //mongo creates unique identifer
   text: String
 });
 

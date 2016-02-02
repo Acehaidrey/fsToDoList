@@ -7,7 +7,7 @@ export default createStore ({
   listenables: [Actions],
 
   addToDo: function(text) {
-    console.log(text);
+    console.log(text + " addtodo");
     $.ajax({
       url: '/api/addtodo',
       type: 'POST',
