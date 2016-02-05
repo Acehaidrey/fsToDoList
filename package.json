@@ -7,6 +7,11 @@
     "type": "git",
     "url": "git+https://github.com/Acehaidrey/fsToDoList.git"
   },
+  "scripts": {
+    "build": "webpack --watch",
+    "ace": "npm run build & npm start",
+    "start": "nodemon server.js"
+  },
   "author": "Ace Haidrey",
   "license": "MIT",
   "bugs": {

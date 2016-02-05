@@ -23,7 +23,7 @@ export default class AddToList extends Component {
   _handleClick = () => {
     console.log(this.state.text + " tst");
     Actions.addToDo(this.state.text);
-    // toDoStore.addToDo(this.state.text);
+    // Actions.getToDo();
     this.setState ({
       text: ''
     });
